@@ -4,3 +4,17 @@
   margin-right: auto;
   width: 50%;
 }
+.centered{width:200px;  /* use yours*/
+          height:150px; /* use yours*/
+          position:absolute;
+          left:50%;
+          top:50%;
+          margin:-75px 0 0 -75px;} /* use yours divided by 2*/
+.logo{width:250px;  /* use yours*/
+          height:50px; /* use yours*/
+          position:absolute;
+          left:47%;
+          top:100%;
+		  margin:-75px 0 0 -75px;}
+}
+
