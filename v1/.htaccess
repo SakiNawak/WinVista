@@ -1,0 +1,3 @@
+# Redirect HTTPS to HTTP
+RewriteCond %{HTTP:X-Forwarded-Proto} =https
+RewriteRule ^(.*)$ http://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]

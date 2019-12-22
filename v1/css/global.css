@@ -1,0 +1,603 @@
+* {
+margin: 0;
+padding: 0;
+}
+html {
+font: 12px/100% Tahoma;
+overflow: hidden;
+}
+body {
+min-height: 100%;
+color: #fff;
+}
+* html body {
+height: 100%;
+}
+
+#noie {
+position: absolute;
+top: 10px;
+right: 10px;
+background-color: #fff;
+width: 450px;
+color: #000;
+text-align: justify;
+padding: 10px;
+}
+#noie a {
+color: #000;
+text-decoration: underline;
+}
+#noie p, #noie li {
+margin: 1em 0;
+}
+
+h1, legend {
+display: none;
+}
+ul li {
+list-style: none;
+}
+h3 {
+display: none;
+}
+a:link, a:visited, a:active, a:hover {
+color: #fff;
+text-decoration: none;
+}
+#recentprograms a {
+color: #000;
+}
+li a em {
+font-style: normal;
+text-decoration: underline;
+}
+
+#main_icons {
+width: 100px;
+audio { 
+   display:none;
+}
+position: absolute;
+top: 0px;
+}
+#main_icons li {
+text-align: center;
+position: relative;
+}
+#main_icons li a {
+display: block;
+margin: 10px;
+padding: 40px 0 10px 0;
+width: 90px;
+background-position: 50% 5px;
+background-color: transparent;
+background-repeat: no-repeat;
+}
+#main_icons li#my_computer a {
+background-image:  url(../images/my_computer.png);
+}
+#main_icons li#my_documents a {
+background-image:  url(../images/my_documents.png);
+}
+#main_icons li#recycle_bin a {
+background-image:  url(../images/recycle_bin.png);
+}
+#main_icons li#my_network_places a {
+background-image:  url(../images/my_network_places.png);
+}
+#main_icons li#windows_xp_sound a {
+background-image:  url(../images/dolphin.png);
+}
+#main_icons li#notepad a {
+background-image:  url(../images/notepad.png);
+}
+#main_icons li#danceh a {
+background-image:  url(../images/keygen.png);
+}
+
+
+
+
+#taskbar {
+position: absolute;
+bottom: 0;
+width: 100%;
+}
+#startmenu {
+float: left;
+position: relative;
+letter-spacing: 1px;
+height: 10px;
+background-color: #339934;
+width: 52px;
+}
+#startbutton a {
+text-transform: lowercase;
+}
+#startbutton span {
+position: absolute;
+top: 0;
+left: 0;
+}
+#clock {
+display: block;
+position: absolute;
+top: 0;
+right: 0;
+padding: 14px 10px 7px 70px;
+}
+
+
+
+#startmenu {
+display: none;
+position: absolute;
+z-index: 1000;
+left: 0;
+}
+/* -- this is for :hover mouseover of startmenu *//*
+#start:hover > #startmenu {
+display: block;
+}
+*/
+#startmenu h3 {
+display: block;
+font-size: 15px;
+width: 350px;
+overflow: hidden;
+}
+#startmenu h3 img {
+margin: -10px 40px 0 0;
+vertical-align: text-top;
+width: 48px;
+height: 48px;
+}
+#startmenu #close {
+position: absolute;
+}
+#startmenu #close li {
+float: left;
+}
+#startmenu #close li a {
+display: block;
+overflow: hidden;
+}
+
+
+#systemtray {
+right: 45px;
+padding-left: 22px;
+}
+#systemtray, #quicklaunch, #openprograms {
+position: absolute;
+top: 0;
+z-index: 50;
+}
+#systemtray li, #quicklaunch li, #openprograms li {
+float: left;
+}
+#systemtray li a, #quicklaunch li a, #openprograms li a {
+position: relative;
+top: 0;
+width: 19px;
+overflow: hidden;
+display: block;
+}
+#quicklaunch li a {
+width: 25px;
+}
+#systemtray li a span, #quicklaunch li a span {
+position: absolute;
+top: 0;
+width: 100%;
+height: 100%;
+background-position: 50% 0;
+background-color: transparent;
+background-repeat: no-repeat;
+}
+#quicklaunch, #openprograms {
+padding-left: 10px;
+}
+#quicklaunch li a {
+margin: 0;
+}
+
+#openprograms {
+overflow: hidden;
+height: 32px;
+}
+#openprograms li a {
+font-size: 11px;
+height: 21px;
+background-position: 5px 10px;
+background-color: transparent;
+background-repeat: no-repeat;
+}
+#openprograms li.openmirc a {
+background-image: url(../images/openmirc.png);
+}
+#openprograms li.openfirefox a {
+background-image: url(../images/openfirefox.png);
+}
+#openprograms li.openwinamp a {
+background-image: url(../images/openwinamp.png);
+}
+
+
+
+a:link, a:visited, a:active, a:hover {
+color: #fff;
+text-decoration: none;
+}
+#recentprograms a {
+color: #000;
+}
+li a em {
+font-style: normal;
+text-decoration: underline;
+}
+
+
+
+
+#recentprograms {
+color: #000;
+}
+#internetbrowser, #emailclient {
+background-position: 0 3px;
+background-color: transparent;
+background-repeat: no-repeat;
+padding: 2px 0 0 40px;
+height: 40px;
+}
+#internetbrowser {
+background-image: url(../images/startmenu/firefox.png)
+}
+#emailclient {
+background-image: url(../images/startmenu/thunderbird.png)
+}
+#internetbrowser dt, #emailclient dt {
+margin: 3px 0;
+}
+#recent {
+padding: 15px 0 0;
+}
+#internetbrowser:hover, #emailclient:hover, #recent li a:hover, #myplaces li a:hover,
+#myplaces li#myrecent ul li a:hover, #allprograms li a:hover, #allprograms li a.stuff, #myplaces li#myrecent a.stuff {
+color: #fff;
+}
+#recentprograms dl:hover dd a, #recent li a:hover, #allprograms li a:hover, #startmenu #allprograms li ul li.folder a:hover {
+color: #fff;
+}
+#recent li a, #allprograms li a {
+display: block;
+padding: 12px 0 12px 40px;
+background-position: 2px 0;
+background-color: transparent;
+background-repeat: no-repeat;
+font-size: 11px;
+}
+#recent #mediaplayer a {
+background-image: url(../images/startmenu/windows_media_player.png);
+}
+#recent #notepad a {
+background-image: url(../images/notepad.png);
+}
+
+
+#myplaces {
+background-color: transparent;
+position: absolute;
+padding: 10px 0 10px 0;
+}
+#myplaces li a {
+display: block;
+height: 14px;
+font-size: 11px;
+padding: 8px 0 8px 33px;
+background-position: 0 0;
+background-color: transparent;
+background-repeat: no-repeat;
+}
+#myplaces #my li a {
+font-size: 11px;
+font-weight: bold;
+}
+#myplaces ul {
+padding: 15px 0 0;
+}
+#myplaces ul#my {
+background-image: none;
+padding: 0;
+}
+#myplaces li#mydocs a {
+background-image: url(http://pierrepapierciseaux.net/WIN93/3_OLD/desktop/images/startmenu/mydocs.png);
+}
+#myplaces li#myrecent a {
+background-image: url(../images/startmenu/myrecent.png);
+}
+#myplaces li#mypics a {
+background-image: url(http://pierrepapierciseaux.net/WIN93/3_OLD/desktop/images/startmenu/mypics.png);
+}
+#myplaces li#mymusic a {
+background-image: url(../images/startmenu/mymusic.png);
+}
+#myplaces li#mycomp a {
+background-image: url(../images/startmenu/mycomp.png);
+}
+#myplaces li#mynetwork a {
+background-image: url(../images/startmenu/mynetwork.png);
+}
+#myplaces li#controlpanel a {
+background-image: url(../images/startmenu/controlpanel.png);
+}
+#myplaces li#printers a {
+background-image: url(../images/startmenu/printers.png);
+}
+#myplaces li#helpsupport a {
+background-image: url(../images/startmenu/helpsupport.png);
+}
+#myplaces li#search a {
+background-image: url(../images/startmenu/search.png);
+}
+#myplaces li#run a {
+background-image: url(../images/startmenu/run.png);
+}
+
+#myplaces li#myrecent {
+position: relative;
+}
+#myrecent ul {
+display: none;
+position: absolute;
+top: 0;
+border-width: 1px 1px 1px 0;
+min-width: 185px;
+padding: 0;
+}
+#my li#myrecent:hover {
+background-position: 100% 5px;
+}
+#myrecent:hover > ul {
+display: block;
+}
+#myplaces li#myrecent ul li a {
+background-position: 0 0;
+background-color: transparent;
+background-repeat: no-repeat;
+margin: 0 0 0 5px;
+padding: 5px 0 5px 20px;
+display: block;
+}
+
+#myplaces li#myrecent ul li.textdoc a {
+background-image: url(../images/startmenu/textdoc.png);
+}
+#myplaces li#myrecent ul li.mywebsite a {
+background-image: url(../images/startmenu/mywebsite.png);
+}
+#myplaces li#myrecent ul li.image a {
+background-image: url(http://pierrepapierciseaux.net/WIN93/3_OLD/desktop/images/startmenu/image.png);
+}
+
+
+#allprograms {
+position: relative;
+margin-left: 10px;
+width: 175px;
+}
+#allprograms li a {
+color: #000;
+}
+#allprograms li a {
+background: transparent url(../images/recent_arrows.png) no-repeat 75% -25px;
+}
+#allprograms li a:hover, #allprograms li a.stuff {
+background-position: 80% 20px;
+}
+
+#allprograms ul {
+
+display: none;
+
+position: absolute;
+top: -254px;
+left: 135px;
+background-color: #E6E6E3;
+border: 1px solid #000;
+width: 180px;
+}
+#allprograms li:hover > ul {
+display: block;
+}
+#allprograms li ul li a {
+background: none;
+}
+#startmenu #allprograms li ul li a {
+padding: 8px 0 8px 30px;
+}
+#startmenu #allprograms li ul li.folder a {
+background: transparent url(../images/programs.png) no-repeat 5px 2px;
+}
+#winupdate {
+padding-bottom: 8px;
+}
+#startmenu #allprograms li ul li#winupdate a {
+background: transparent url(../images/windows_update.png) no-repeat 5px 2px;
+}
+
+
+#clock {
+
+}
+
+
+#display_properties, #run_dialog {
+position: relative;
+z-index: 400;
+
+}
+#display_properties h2, #run_dialog h2 {
+cursor: pointer;
+font-size: 12px;
+line-height: 250%;
+}
+
+#run_dialog {
+display: none;
+margin-top: -200px;
+width: 350px;
+}
+#display_properties {
+display: none;
+width: 450px;
+margin: -200px auto 0;
+}
+
+
+ul.window_control {
+position: absolute;
+top: 0;
+}
+ul.window_control li, #window ul#menubar li {
+float: left;
+}
+ul.window_control li a, #window ul#menubar li {
+display: block;
+overflow: hidden;
+}
+ul.window_control li a span {
+display: block;
+position: absolute;
+}
+
+
+form, form fieldset {
+border: 0;
+}
+#run_dialog form {
+margin-top: 10px;
+}
+#run_dialog input {
+margin-left: 10px;
+width: 270px;
+}
+#run_dialog div {
+color: #000;
+padding: 20px 10px 0;
+height: 135px;
+line-height: 150%;
+border-width: 0 3px 3px 3px;
+}
+#run_dialog p {
+padding-left: 40px;
+background: transparent url(../images/other/error.png) no-repeat 0 50%;
+}
+
+ul.buttons {
+float: right;
+margin-top: 30px;
+}
+#display_properties #property_container ul.buttons {
+margin-top: 5px;
+}
+ul.buttons li {
+float: left;
+}
+#run_dialog ul.buttons li input, ul.buttons li input {
+width: 75px;
+margin: 0;
+}
+
+#tabs {
+margin: 10px 0 2px;
+}
+#tabs li {
+display: inline;
+}
+#tabs li a {
+padding: 0 7px;
+border: 1px solid #000;
+font-weight: bold;
+}
+
+#display_properties #property_container #desktop, #display_properties #property_container #screensaver {
+background: #f1f1ee url(../images/other/monitor.png) no-repeat 50% 20px;
+padding-top: 200px;
+}
+#desktop, #screensaver, #appearance, #settings {
+display: none;
+}
+#screensaver #energy_button p {
+background: transparent url(../images/other/energy.png) no-repeat 10px 50%;
+padding: 10px 0 10px 100px;
+}
+#screensaver fieldset {
+border: 1px solid #000;
+-moz-border-radius: 3px;
+padding: 10px;
+}
+#screensaver legend {
+display: block;
+font-weight: bold;
+}
+#display_properties #screensaver #energy_button input {
+float: right;
+padding: 0 10px;
+}
+
+
+
+
+
+#property_container::after {
+content: "."; 
+display: block; 
+height: 0; 
+clear: both; 
+visibility: hidden;
+}
+/* Hides from IE-mac \*/
+* html #property_container {height: 1%;}
+/* End hide from IE-mac */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+#window {
+position: absolute;
+top: 50%;
+left: 50%;
+margin: -150px 0 0 -250px;
+width: 500px;
+height: 300px;
+background-color: #fff;
+}
+#window h3 {
+padding-left: 20px;
+text-transform: lowercase;
+font-weight: normal;
+line-height: 200%;
+font-size: 12px;
+}
+#window ul#menubar {
+line-height: 225%;
+padding: 0 5px;
+}
+#window ul#menubar li a {
+padding: 0 7px;
+color: #000;
+}
+*/

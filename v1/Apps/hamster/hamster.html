@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+
+<h3>Look at this beautiful hampsters dancing just for you !</h3>
+
+<audio controls id="audio-example" loop>
+  <!-- One or more source files, each referencing the same audio but in a different file format.
+    The browser will choose the first file which it is able to play. -->
+   <source src="originaldedodedo.wav">
+</audio>
+
+<style>
+#audio-example {
+display: block;
+}
+</style>
+
+<center>
+  <img src="anin.gif">
+  <img src="anin.gif">
+  <img src="anin.gif">
+
+  <img src="hamu.gif">
+  <img src="hamu.gif">
+  <img src="hamu.gif">
+  <img src="hamu.gif">
+  <img src="hamu.gif">
+  <img src="hamu.gif">
+  <img src="hamu.gif">
+
+  <img src="anin.gif">
+  <img src="anin.gif">
+  <img src="anin.gif">
+
+  <img src="gerbil.gif">
+  <img src="gerbil.gif">
+  <img src="gerbil.gif">
+  <img src="gerbil.gif">
+  <img src="gerbil.gif">
+  <img src="gerbil.gif">
+  <img src="gerbil.gif">
+
+  <img src="anin.gif">
+  <img src="anin.gif">
+  <img src="anin.gif">
+
+  <img src="hamwalk.gif">
+  <img src="hamwalk.gif">
+  <img src="hamwalk.gif">
+  <img src="hamwalk.gif">
+  <img src="hamwalk.gif">
+  <img src="hamwalk.gif">
+  <img src="hamwalk.gif">
+  <img src="hamwalk.gif">
+
+
+  <img src="anin.gif">
+  <img src="anin.gif">
+  <img src="anin.gif">
+
+  <img src="hamu.gif">
+  <img src="hamu.gif">
+  <img src="hamu.gif">
+  <img src="hamu.gif">
+  <img src="hamu.gif">
+  <img src="hamu.gif">
+  <img src="hamu.gif">
+
+  <img src="anin.gif">
+  <img src="anin.gif">
+  <img src="anin.gif">
+
+  <img src="gerbil.gif">
+  <img src="gerbil.gif">
+  <img src="gerbil.gif">
+  <img src="gerbil.gif">
+  <img src="gerbil.gif">
+  <img src="gerbil.gif">
+  <img src="gerbil.gif">
+
+  <img src="anin.gif">
+  <img src="anin.gif">
+  <img src="anin.gif">
+
+  <img src="hamwalk.gif">
+  <img src="hamwalk.gif">
+  <img src="hamwalk.gif">
+  <img src="hamwalk.gif">
+  <img src="hamwalk.gif">
+  <img src="hamwalk.gif">
+  <img src="hamwalk.gif">
+  <img src="hamwalk.gif">
+
+
+  <img src="anin.gif">
+  <img src="anin.gif">
+  <img src="anin.gif">
+
+  <img src="hamu.gif">
+  <img src="hamu.gif">
+  <img src="hamu.gif">
+  <img src="hamu.gif">
+  <img src="hamu.gif">
+  <img src="hamu.gif">
+  <img src="hamu.gif">
+
+  <img src="anin.gif">
+  <img src="anin.gif">
+  <img src="anin.gif">
+
+  <img src="gerbil.gif">
+  <img src="gerbil.gif">
+  <img src="gerbil.gif">
+  <img src="gerbil.gif">
+  <img src="gerbil.gif">
+  <img src="gerbil.gif">
+  <img src="gerbil.gif">
+
+  <img src="anin.gif">
+  <img src="anin.gif">
+  <img src="anin.gif">
+
+  <img src="hamwalk.gif">
+  <img src="hamwalk.gif">
+  <img src="hamwalk.gif">
+  <img src="hamwalk.gif">
+  <img src="hamwalk.gif">
+  <img src="hamwalk.gif">
+  <img src="hamwalk.gif">
+  <img src="hamwalk.gif">
+  </center>
+
+  <div style="position:relative;top:0;bottom:0;left:0;right:0;"></div>
+
+  <script>
+    var center = document.getElementsByTagName('center')[0];
+    var div = document.getElementsByTagName('div')[0];
+    var height = div.offsetHeight;
+
+    var hList = [
+    'anin.gif',
+    'anin.gif',
+    'anin.gif',
+    'hamu.gif',
+    'hamu.gif',
+    'hamu.gif',
+    'hamu.gif',
+    'hamu.gif',
+    'hamu.gif',
+    'hamu.gif',
+    'anin.gif',
+    'anin.gif',
+    'anin.gif',
+    'gerbil.gif',
+    'gerbil.gif',
+    'gerbil.gif',
+    'gerbil.gif',
+    'gerbil.gif',
+    'gerbil.gif',
+    'gerbil.gif',
+    'anin.gif',
+    'anin.gif',
+    'anin.gif',
+    'hamwalk.gif',
+    'hamwalk.gif',
+    'hamwalk.gif',
+    'hamwalk.gif',
+    'hamwalk.gif',
+    'hamwalk.gif',
+    'hamwalk.gif',
+    'hamwalk.gif'];
+
+    var hamsters;
+    var triggerCat = 10000;
+    function createList(nyaaaaaa) {
+      hamsters = document.createDocumentFragment();
+      var rdm = ~~(hList.length * Math.random());
+      for (var i = 0, l = hList.length; i < l; i++) {
+        if (nyaaaaaa && i === rdm) {
+          triggerCat += 10000;
+          var nyan = new Image();
+          nyan.src = 'nyan.gif';
+          hamsters.appendChild(nyan);
+        } else {
+          var hamster = new Image();
+          hamster.src = hList[i];
+          hamsters.appendChild(hamster);
+        }
+      }
+    }
+    createList()
+
+    var scrollElm = document.scrollingElement || document.documentElement
+
+    window.addEventListener("scroll", function() {
+      if ((scrollElm.scrollHeight - scrollElm.scrollTop)/2 < height) {
+        center.appendChild(hamsters);
+        createList(scrollElm.scrollTop > triggerCat);
+      }
+    });
+
+  </script>
+  
+
+</body>
+</html>
