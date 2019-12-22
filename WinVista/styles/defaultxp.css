@@ -17,8 +17,8 @@ height: 27px;
 background: #D4D0C8 url(../images/classic/taskbar.png) repeat-x 0 0;
 }
 #startbutton span {
-width: 59px;
-height: 27px;
+width: 64px;
+height: 59px;
 background: transparent url(../images/classic/start_button.png) no-repeat 0 0;
 }
 /*
@@ -31,17 +31,17 @@ background-position: 0 -54px;
 */
 #clock {
 padding: 8px 10px 8px 50px;
-color: #000;
+color: #fff;
 background: #616163 url(../images/classic/clock.png) no-repeat 100% 0;
 }
 
 
 
 #startbutton span.starthovered {
-background-position: 0 -27px;
+background-position: 0 -65px;
 }
 #startbutton span.startclicked {
-background-position: 0 -54px;
+background-position: 0 -65px;
 }
 
 
