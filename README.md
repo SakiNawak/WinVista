@@ -9,8 +9,8 @@ The Windows Vista name, artwork, trademark are surely property of Microsoft. Thi
 
 ## Thanks
 
--Login Screen of Vista based on [Geekprank](https://geekprank.com/win7-update/).
+- Login Screen of Vista based on [Geekprank](https://geekprank.com/win7-update/).
 
--Original Windows 93 on [Windows 93](http://v0.windows93.net/)
+- Original Windows 93 on [Windows 93](http://v0.windows93.net/)
 
 - [JS Paint](https://github.com/1j01/jspaint), Paint reimplementation by: [1j01](https://github.com/1j01)
