@@ -117,7 +117,9 @@ background-image:  url(../images/my_network_places.png);
 .icon {
 	width: 48px;
 }
-
+.icon1 {
+	width: 16px;
+}
 
 #taskbar {
 position: absolute;

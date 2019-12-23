@@ -24,6 +24,7 @@
  <script>
 $(function() {
 $( "#window.my_computer" ).draggable({zIndex: 100, scroll: false, cancel: '.middle, .bottom'  });
+$( "#window.cmd" ).draggable({zIndex: 100, scroll: false, cancel: '.middle, .bottom'  });
 $( "#window.my_documents" ).draggable({ zIndex: 100, scroll: false, cancel: '.middle, .bottom'  });
 $( "#window.recycle_bin" ).draggable({ zIndex: 100, scroll: false, cancel: '.middle, .bottom'  });
 $( "#window.my_network_places" ).draggable({ zIndex: 100, scroll: false, cancel: '.middle, .bottom'  });
@@ -40,7 +41,7 @@ $( "#window.my_network_places" ).draggable({ zIndex: 100, scroll: false, cancel:
 <div id="window" class="my_computer" draggable="true">
 	<div class="top">
 		<div class="titre">
-			WINDOWS 93
+			<p style="text-align:left">Windows 93</p>
 			<div id="close"  class="my_computer"></div>
 		</div>
 		<div class="info">
@@ -75,12 +76,43 @@ __  _  _____________|  |    __| _/
 	<div class="bottom"></div>
 </div>
 
-
+<div id="window" class="cmd" draggable="true">
+	<div class="top">
+		<div class="titre">
+			<p style="text-align:left">C:\WINDOWS\system32\cmd.exe</p>
+			<div id="close"  class="cmd"></div>
+		</div>
+		<div class="info">
+			&hearts;  &#9760;  &#9835;
+		</div>
+	</div>
+	<div class="middle">
+		<div class="cmds">
+			<p class="glitch" style="text-align:left">
+Microsoft Windows [Version 6.0.6000]
+<br>
+Copyright (c) 2006 Microsoft Corporation. All rights reserved.
+<br>
+<br>
+C:\Windows\Users\Karen>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+</p>
+		</div>
+	</div>
+	<div class="bottom"></div>
+</div>
 
 <div id="window" class="my_documents" draggable="true">
 	<div class="top">
 		<div class="titre">
-			RELEASES
+			<p style="text-align:left">RELEASES</p>
 			<div id="close"  class="my_documents"></div>
 		</div>
 		<div class="info">
@@ -115,7 +147,7 @@ Lorem ipsum dolor sit amet, consecteteur adipiscing elit pede. Dui ut consectetu
 <div id="window" class="recycle_bin" draggable="true">
 	<div class="top">
 		<div class="titre">
-			RECYCLE BIN
+			<p style="text-align:left">Corbeille</p>
 			<div id="close"  class="recycle_bin"></div>
 		</div>
 		<div class="info">
@@ -137,7 +169,7 @@ Lorem ipsum dolor sit amet, consecteteur adipiscing elit pede. Dui ut consectetu
 <div id="window" class="my_network_places" draggable="true">
 	<div class="top">
 		<div class="titre">
-			LINKS
+			<p style="text-align:left">LINKS</p>
 			<div id="close"  class="my_network_places"></div>
 		</div>
 		<div class="info">
@@ -208,6 +240,7 @@ Lorem ipsum dolor sit amet, consecteteur adipiscing elit pede. Dui ut consectetu
 
 <ul id="main_icons">
 <li id="my_computer"><a title="Shows the disk drives and hardware connected to this computer."><img src="images/Computer-icon.png" class="icon"><span></span>Computer</a></li>
+<li id="cmd"><a title="Shows the disk drives and hardware connected to this computer."><img src="images/cmd.png" class="icon"><span></span><br>Invite de Commande</a></li>
 <li id="my_documents"><a title="Contains letters, reports, and other documents and files."><span></span>RELEASES</a></li>
 <li id="recycle_bin"><a title="Contains the files and folders you have deleted."><img src="images/trash-icon.png" class="icon"><span></span><br>Recycle Bin</a></li>
 <li id="my_network_places"><a title="Shows shortcuts to Web sites, network computers, and FTP sites."><span></span>LINKS</a></li>
@@ -376,6 +409,7 @@ Lorem ipsum dolor sit amet, consecteteur adipiscing elit pede. Dui ut consectetu
 
 <script type="text/javascript">
 Drag.init(document.getElementById("my_computer"));
+Drag.init(document.getElementById("cmd"));
 Drag.init(document.getElementById("my_documents"));
 Drag.init(document.getElementById("recycle_bin"));
 Drag.init(document.getElementById("my_network_places"));
@@ -396,6 +430,15 @@ $( "#window.my_computer" ).toggle( "fast", function() {
 });
 $( "#close.my_computer" ).click(function() {
 $( "#window.my_computer" ).toggle( "fast", function() {
+});
+});
+
+$( "#cmd" ).dblclick(function() {
+$( "#window.cmd" ).toggle( "fast", function() {
+});
+});
+$( "#close.cmd" ).click(function() {
+$( "#window.cmd" ).toggle( "fast", function() {
 });
 });
 
