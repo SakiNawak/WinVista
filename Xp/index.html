@@ -4,82 +4,30 @@
 <meta charset="UTF-8">
 <title>WINDOWS 93</title>
 <link rel="stylesheet" type="text/css" media="screen" href="css/defaultxp.css" title="User Defined Style">
-<link rel="alternate stylesheet" href="css/defaultxp.css" type="text/css" media="screen" title="Default XP Theme">
+<link rel="stylesheet" href="css/style.css" type="text/css">
 
 <!-- javascript needed for added functionality. Includes working clock and dragable desktop icons -->
 <!-- javascript functionality by Alex Schroeder http://alexanderschroeder.net/ -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+<script src="https://code.jquery.com/ui/1.11.0/jquery-ui.js"></script>
+
 <script type="text/javascript" src="js/clock.js"></script>
 <script type="text/javascript" src="js/startmenu.js"></script>
 <script type="text/javascript" src="js/xp-demo-common.js"></script>
 <script type="text/javascript" src="js/dom-drag.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
-<script src="https://code.jquery.com/ui/1.11.0/jquery-ui.js"></script>
+<script type="text/javascript" src="js/balloon.js"></script>
+<script type="text/javascript" src="../apps/apps.js"></script>
 
 <script type="text/javascript"> 
 var totalCount = 2;
 function ChangeIt() 
 {
 var num = Math.ceil( Math.random() * totalCount );
-document.body.background = 'images/background/'+num+'.jpg';
+document.body.background = 'images/background/'+num+'.png';
 document.body.style.backgroundSize = "cover";// Background repeat
 }
 </script>
 
-<script type='text/javascript'>//<![CDATA[ 
-$(window).load(function(){
-$(document).ready(function(){
-   $("#window.windows_xp_sound").draggable({zIndex: 100, scroll: false, cancel: '.middle, .bottom'  });
-});
-});//]]>  
-</script>
-
-<script type='text/javascript'>//<![CDATA[ 
-$(window).load(function(){
-$(document).ready(function(){
-   $("#window.my_computer").draggable(zIndex: 100, scroll: false, cancel: '.middle, .bottom'  });
-});
-});//]]>  
-</script>
-
-<script type='text/javascript'>//<![CDATA[ 
-$(window).load(function(){
-$(document).ready(function(){
-   $("#window.recycle_bin").draggable(({zIndex: 100, scroll: false, cancel: '.middle, .bottom'  }));
-});
-});//]]>  
-</script>
-
-<script type='text/javascript'>//<![CDATA[ 
-$(window).load(function(){
-$(document).ready(function(){
-   $("#window.my_network_places").draggable(({zIndex: 100, scroll: false, cancel: '.middle, .bottom'  }));
-});
-});//]]>  
-</script>
-
-<script type='text/javascript'>//<![CDATA[ 
-$(window).load(function(){
-$(document).ready(function(){
-   $("#window.notepad").draggable({zIndex: 100, scroll: false, cancel: '.middle, .bottom'  });
-});
-});//]]>  
-</script>
-
-<script type='text/javascript'>//<![CDATA[ 
-$(window).load(function(){
-$(document).ready(function(){
-   $("#window.my_documents").draggable({zIndex: 100, scroll: false, cancel: '.middle, .bottom'  });
-});
-});//]]>  
-</script>
-
-<script type='text/javascript'>//<![CDATA[ 
-$(window).load(function(){
-$(document).ready(function(){
-   $("#window.danceh").draggable({zIndex: 100, scroll: false, cancel: '.middle, .bottom'  });
-});
-});//]]>  
-</script>
 
 <script>
 function toggleVideo(state) {
@@ -103,7 +51,7 @@ ChangeIt();
 <div id="window" class="my_computer" draggable="true">
 	<div class="top">
 		<div class="titre">
-			WindowsXP3
+			Windows XP
 			<div id="close"  class="my_computer"></div>
 		</div>
 		<div class="info">
@@ -198,18 +146,18 @@ Welcome to Windows XP3 :)<br>
 	<div class="bottom"></div>
 </div>
 
-<div id="window" class="windows_xp_sound" draggable="true">
+<div id="window" class="paint" draggable="true">
     <div class="top">
         <div class="titre">
             Paint
-            <div id="close"  class="windows_xp_sound"></div>
+            <div id="close"  class="paint"></div>
         </div>
     </div>
     <div class="middle">
         <div class="caption">
             <p class="glitch">
 			
-				<iframe src="apps/paint/paint.html" width="440" height="440"></iframe>
+				<iframe src="../apps/Paint/paint.html" width="440" height="440"></iframe>
                
             </p>
         </div>
@@ -289,12 +237,12 @@ Welcome to Windows XP3 :)<br>
 </div>
 
 <ul id="main_icons">
-<li id="my_computer"><a><span></span>Windows XP</a></li>
-<li id="my_documents"><a><span></span>Releases</a></li>
-<li id="recycle_bin"><a><span></span>Recycle Bin</a></li>
+<li id="my_computer"><a title="Shows the disk drives and hardware connected to this computer."><img src="../images/XP/Computer-icon.png" class="icon"><span></span><br>Computer</a></li>
+<li id="recycle_bin"><a><img src="../images/XP/trash-icon.png" class="icon"><span></span><br>Recycle Bin</a></li>
+<li id="notepad"><a><img src="../images/XP/notepad.png" class="icon"><span></span><br>Notepad</a></li>
+<li id="paint"><a><img src="../images/XP/mspaint.png" class="icon"><span></span><br>Paint</a></li>
 <li id="my_network_places"><a><span></span>Links</a></li>
-<li id="windows_xp_sound"><a><span></span>Paint</a></li>
-<li id="notepad"><a><span></span>Notepad</a></li>
+<li id="my_documents"><a><span></span>Releases</a></li>
 <li id="danceh" style="left: 109px; top: -439px;"><a><span></span>Hampster dance don't open it !</a></li>
 </ul>
 <div id="display_properties">
@@ -445,9 +393,27 @@ Welcome to Windows XP3 :)<br>
 
 <ul id="systemtray">
 <li id="winamp"><a  title="Winamp 5.08"><span></span>Winamp</a></li>
-<li id="msn"><a  title="MSN Messenger (BETA) - Signed In"><span></span>MSN</a></li>
-<li id="lan"><a  title="Local Area Connection"><span></span>LAN</a></li>
+
+<li id="defender"><a  title="Winamp 5.08"><span></span>Winamp</a>
+</li>
+<li id="msn"><a  title="MSN Messenger (BETA) - Signed In"><span></span>MSN</a><div id="balloon" style="display:none">
+	<div style="position: relative; width: 0px; height: 0px;">
+		<div class="sc-htpNat gBRyzn"><div class="balloon__container">
+			<button class="balloon__close" id="balloon_close"></button>
+			<div class="balloon__header">
+				<img class="balloon__header__img" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAALnSURBVDhPjY8LLNVxFMeP3ZvrTjWReYV7FUrZPEZCWaRVXhW3mjTmWV2PipK8RzZKKI0bLbpNniMmy+OixzwqZmkRm8dadWVJ6WXWt7/5b6VZ9dnOdnbO+Zzz+9HSWG4WR1x5HBqfDe8jqT1MwXih/g8uZVW6aeseSjgZVY7q2id42v0aKanNcD+c911puenR+T47uhiuks0mjXXeGfNiTcwtjIpikX6+DvXZlRhQNUN52h2EJ3XBxDqtja+yO5BojS6rLuAblDPZl92AD1kSIDIEn0/EoyZWCtm5bMzQMgyROpqcxahIL0FaTi8MTET3hRs8rFmd6HRcyaeBwGR8PR6N7wFRmHX0w0dLEeSq5nhL2nihoI4O4qKdr4aCvEZY2EcM6Qi3O7I6UUCEVD544AzmDF0wt94d/bJW9AnM8EFBC/Vu7pgoLEQLrULDSm1kZlTAyNz/ucDYNZjViXbuL3z4TBQOkAFmOYZ41dmJsf5+1Hn7YHxiAu9kMtyl5agVmCMhpRSaApcOA5N9vqxOpGFwrLjPKxRyWo1xrh4GOIqYGB3FPN+YRb0KPFQzX6gwtUdEYhmIKyxau9FrD6sTOTiK0zpOZ2KQlNDH0UKZ6CDeT09jprsbky8H0RQWhioi3AlJxsHgfNjYOhcyC2xZnShIfNXTT1wx1WXjinZSxcjICOQSCVp11mAsKQlvmpshXaUNaXE7bJ0ivzg67ctiFghZfQE1Ha/c+VdUM5eqmCVlTEhJBQW0AheYmiwmAxl5LeDydKr27g/wYbXf4QpPxTX+qPHwhoQRJKSMy8RHCpPftLJDe+cQXD0ToadvHOLrH2XJSovhKVvGNbTJIQ2MRjwjnmXi2hY7DL8cwcVcGYj4RVu3uS91/Rf6Rm71j3qmcS89F+Un4vDq7RTyb3SBxxf0WlnvOMaO/RWeuoZVad51GRrbhuHjlwwFjuYDcwuHU2z/f1EScRQ1bzNJ1BbbXQELtT8h+gm9undzpD1ygQAAAABJRU5ErkJggg==" alt="risk">
+				<span class="balloon__header__text">Your computer might be at risk</span>
+			</div>
+			<p class="balloon__text__first">Antivirus software might not be installed</p>
+			<p class="balloon__text__second">Click this balloon to fix this problem.</p>
+			</div>
+		</div></li>
+<li id="lan"><a  title="Local Area Connection"><span></span>LAN</a>
+	</div>
+	<div>
+</li>
 </ul>
+
 
 
 <p id="clock">00:00</p>
@@ -462,7 +428,7 @@ Drag.init(document.getElementById("my_computer"));
 Drag.init(document.getElementById("my_documents"));
 Drag.init(document.getElementById("recycle_bin"));
 Drag.init(document.getElementById("my_network_places"));
-Drag.init(document.getElementById("windows_xp_sound"));
+Drag.init(document.getElementById("paint"));
 Drag.init(document.getElementById("notepad"));
 Drag.init(document.getElementById("danceh"));
 
@@ -511,12 +477,12 @@ $( "#close.my_network_places" ).click(function() {
 $( "#window.my_network_places" ).toggle( "fast", function() {
 });
 });
-$( "#windows_xp_sound" ).dblclick(function() {
-$( "#window.windows_xp_sound" ).toggle( "fast", function() {
+$( "#paint" ).dblclick(function() {
+$( "#window.paint" ).toggle( "fast", function() {
 });
 });
-$( "#close.windows_xp_sound" ).click(function() {
-$( "#window.windows_xp_sound" ).toggle( "fast", function() {
+$( "#close.paint" ).click(function() {
+$( "#window.paint" ).toggle( "fast", function() {
 });
 });
 $( "#notepad" ).dblclick(function() {
