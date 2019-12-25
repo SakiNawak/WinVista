@@ -1,10 +1,16 @@
+html {
+font: 12px/100% Tahoma;
+overflow: hidden;
+}
 * {
 margin: 0;
 padding: 0;
 }
-html {
-font: 12px/100% Tahoma;
-overflow: hidden;
+.icon {
+	width: 32px;
+}
+.icon1 {
+	width: 16px;
 }
 body {
 min-height: 100%;
@@ -73,27 +79,6 @@ width: 90px;
 background-position: 50% 5px;
 background-color: transparent;
 background-repeat: no-repeat;
-}
-#main_icons li#my_computer a {
-background-image:  url(../images/my_computer.png);
-}
-#main_icons li#my_documents a {
-background-image:  url(../images/my_documents.png);
-}
-#main_icons li#recycle_bin a {
-background-image:  url(../images/recycle_bin.png);
-}
-#main_icons li#my_network_places a {
-background-image:  url(../images/my_network_places.png);
-}
-#main_icons li#windows_xp_sound a {
-background-image:  url(../images/dolphin.png);
-}
-#main_icons li#notepad a {
-background-image:  url(../images/notepad.png);
-}
-#main_icons li#danceh a {
-background-image:  url(../images/keygen.png);
 }
 
 
@@ -252,10 +237,10 @@ padding: 2px 0 0 40px;
 height: 40px;
 }
 #internetbrowser {
-background-image: url(../images/startmenu/firefox.png)
+background-image: url(../../images/startmenu/firefox.png)
 }
 #emailclient {
-background-image: url(../images/startmenu/thunderbird.png)
+background-image: url(../../images/startmenu/thunderbird.png)
 }
 #internetbrowser dt, #emailclient dt {
 margin: 3px 0;
@@ -279,7 +264,7 @@ background-repeat: no-repeat;
 font-size: 11px;
 }
 #recent #mediaplayer a {
-background-image: url(../images/startmenu/windows_media_player.png);
+background-image: url(../../images/startmenu/windows_media_player.png);
 }
 #recent #notepad a {
 background-image: url(../images/notepad.png);
@@ -315,34 +300,34 @@ padding: 0;
 background-image: url(http://pierrepapierciseaux.net/WIN93/3_OLD/desktop/images/startmenu/mydocs.png);
 }
 #myplaces li#myrecent a {
-background-image: url(../images/startmenu/myrecent.png);
+background-image: url(../../images/startmenu/myrecent.png);
 }
 #myplaces li#mypics a {
 background-image: url(http://pierrepapierciseaux.net/WIN93/3_OLD/desktop/images/startmenu/mypics.png);
 }
 #myplaces li#mymusic a {
-background-image: url(../images/startmenu/mymusic.png);
+background-image: url(../../images/startmenu/mymusic.png);
 }
 #myplaces li#mycomp a {
-background-image: url(../images/startmenu/mycomp.png);
+background-image: url(../../images/startmenu/mycomp.png);
 }
 #myplaces li#mynetwork a {
-background-image: url(../images/startmenu/mynetwork.png);
+background-image: url(../../images/startmenu/mynetwork.png);
 }
 #myplaces li#controlpanel a {
-background-image: url(../images/startmenu/controlpanel.png);
+background-image: url(../../images/startmenu/controlpanel.png);
 }
 #myplaces li#printers a {
-background-image: url(../images/startmenu/printers.png);
+background-image: url(../../images/startmenu/printers.png);
 }
 #myplaces li#helpsupport a {
-background-image: url(../images/startmenu/helpsupport.png);
+background-image: url(../../images/startmenu/helpsupport.png);
 }
 #myplaces li#search a {
-background-image: url(../images/startmenu/search.png);
+background-image: url(../../images/startmenu/search.png);
 }
 #myplaces li#run a {
-background-image: url(../images/startmenu/run.png);
+background-image: url(../../images/startmenu/run.png);
 }
 
 #myplaces li#myrecent {
@@ -372,10 +357,10 @@ display: block;
 }
 
 #myplaces li#myrecent ul li.textdoc a {
-background-image: url(../images/startmenu/textdoc.png);
+background-image: url(../../images/startmenu/textdoc.png);
 }
 #myplaces li#myrecent ul li.mywebsite a {
-background-image: url(../images/startmenu/mywebsite.png);
+background-image: url(../../images/startmenu/mywebsite.png);
 }
 #myplaces li#myrecent ul li.image a {
 background-image: url(http://pierrepapierciseaux.net/WIN93/3_OLD/desktop/images/startmenu/image.png);

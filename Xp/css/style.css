@@ -1,7 +1,58 @@
-html { 
-  margin:0;
-  padding:0;
-  background: url(image/bg.jpg) no-repeat center fixed; 
-  -webkit-background-size: cover; /* pour anciens Chrome et Safari */
-  background-size: cover; /* version standardisée */
+
+gBRyzn {
+    position: absolute;
+    display: block;
+    opacity: 0;
+    animation: 1s ease 0s 1 normal forwards running eHQlPs;
+    filter: drop-shadow(
+    rgba(0, 0, 0, 0.4) 2px 2px 1px);
+}
+.gBRyzn .balloon__container {
+	position: absolute;
+	right: -4px;
+	bottom: 30px;
+	border: 1px solid black;
+	border-radius: 7px;
+	padding: 6px 28px 10px 10px;
+	background-color: rgb(255, 255, 225);
+	font-size: 11px;
+	white-space: nowrap;
+	color: black;
+}
+.gBRyzn .balloon__close {
+	outline: currentcolor none medium;
+	position: absolute;
+	right: 4px;
+	top: 4px;
+	width: 14px;
+	height: 14px;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	border-radius: 3px;
+	background-color: transparent;
+}
+.gBRyzn .balloon__close:hover {
+	background-color: rgb(255, 169, 12);
+	border-color: white;
+	box-shadow: rgba(0, 0, 0, 0.1) 1px 1px;
+}
+.gBRyzn .balloon__header {
+	display: flex;
+	-moz-box-align: center;
+	align-items: center;
+	font-weight: 700;
+}
+.gBRyzn .balloon__text__first {
+	margin: 5px 0px 10px;
+}
+.gBRyzn .balloon__container::after {
+	content: "";
+	position: absolute;
+	display: block;
+	bottom: -17px;
+	right: 15px;
+	width: 0px;
+	height: 0px;
+	border-style: solid;
+	border-width: 0px 18px 18px 0px;
+	border-color: transparent rgb(255, 255, 225) transparent transparent;
 }

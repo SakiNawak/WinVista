@@ -2,12 +2,12 @@
 
 #taskbar {
 height: 27px;
-background: #D4D0C8 url(../images/XP/taskbar.png) repeat-x 0 0;
+background: #D4D0C8 url(../../images/XP/taskbar.png) repeat-x 0 0;
 }
 #startbutton span {
 width: 90px;
 height: 27px;
-background: transparent url(../images/XP/start_button.png) no-repeat 0 0;
+background: transparent url(../../images/XP/start_button.png) no-repeat 0 0;
 }
 /*
 #startbutton:hover span {
@@ -20,7 +20,7 @@ background-position: 0 -54px;
 #clock {
 padding: 8px 10px 8px 50px;
 color: #fff;
-background: #616163 url(../images/XP/clock.png) no-repeat 100% 0;
+background: #616163 url(../../images/XP/clock.png) no-repeat 100% 0;
 }
 
 
@@ -33,7 +33,6 @@ background-position: 0 -54px;
 }
 
 
-
 /* start menu */
 #start {
 width: 64px;
@@ -41,7 +40,7 @@ height: 27px;
 }
 #startmenu {
 top: -442px;
-background: transparent url(../images/XP/start_menu.png) no-repeat 0 0;
+background: transparent url(../../images/XP/start_menu.png) no-repeat 0 0;
 width: 384px;
 height: 447px;
 }
@@ -65,10 +64,10 @@ background-color: transparent;
 background-repeat: no-repeat;
 }
 #startmenu li#logoff a {
-background-image: url(../images/XP/logoff.png);
+background-image: url(../../images/XP/logoff.png);
 }
 #startmenu li#shutdown a {
-background-image: url(../images/XP/shutdown.png);
+background-image: url(../../images/XP/shutdown.png);
 }
 #startmenu li#logoff a:hover, #startmenu li#shutdown a:hover {
 background-position: 0 -30px;
@@ -78,54 +77,56 @@ color: #fff;
 
 
 #systemtray {
-background: transparent url(../images/XP/system_tray_arrow.png) no-repeat 2px 0;
+background: transparent url(../../images/XP/system_tray_arrow.png) no-repeat 2px 0;
 }
 #systemtray li a, #quicklaunch li a, #openprograms li a {
 height: 27px;
 }
 #systemtray li#gmail a span {
-background-image: url(../images/XP/system_tray_gmail.png);
+background-image: url(../../images/XP/system_tray_gmail.png);
 }
 #systemtray li#lan a span {
-background-image: url(../images/XP/system_tray_lan.png);
+background-image: url(../../images/XP/system_tray_lan.png);
 }
 #systemtray li#winamp a span {
-background-image: url(../images/XP/system_tray_winamp.png);
+background-image: url(../../images/XP/system_tray_winamp.png);
 }
 #systemtray li#msn a span {
-background-image: url(../images/XP/system_tray_msn.png);
+background-image: url(../../images/XP/system_tray_msn.png);
 }
-
+#systemtray li#defender a span {
+background-image: url(../../images/XP/system_tray_security.png);
+}
 
 
 
 #quicklaunch, #openprograms {
 left: 90px;
-background: transparent url(../images/XP/taskbar_resize.png) no-repeat 0 0;
+background: transparent url(../../images/XP/taskbar_resize.png) no-repeat 0 0;
 }
 #quicklaunch li a {
 width: 27px;
 }
 #quicklaunch li#quick_desktop a span {
-background-image: url(../images/XP/quick_launch_destkop.png);
+background-image: url(../../images/XP/quick_launch_destkop.png);
 }
 #quicklaunch li#quick_firefox a span {
-background-image: url(../images/XP/quick_launch_firefox.png);
+background-image: url(../../images/XP/quick_launch_firefox.png);
 }
 #quicklaunch li#quick_winamp a span {
-background-image: url(../images/XP/quick_launch_winamp.png);
+background-image: url(../../images/XP/quick_launch_winamp.png);
 }
 #quicklaunch li#quick_facebook a span {
-background-image: url(../images/XP/quick_launch_facebook.png);
+background-image: url(../../images/XP/quick_launch_facebook.png);
 }
 #quicklaunch li#quick_flashfxp a span {
-background-image: url(../images/XP/quick_launch_flashfxp.png);
+background-image: url(../../images/XP/quick_launch_flashfxp.png);
 }
 #quicklaunch li#quick_soundcloud a span {
-background-image: url(../images/XP/quick_launch_soundcloud.png);
+background-image: url(../../images/XP/quick_launch_soundcloud.png);
 }
 #quicklaunch li#quick_contact a span {
-background-image: url(../images/XP/quick_launch_contact.png);
+background-image: url(../../images/XP/quick_launch_contact.png);
 }
 #quicklaunch li#quick_desktop a:hover span, #quicklaunch li#quick_firefox a:hover span,
 #quicklaunch li#quick_winamp a:hover span, #quicklaunch li#quick_flashfxp a:hover span,
@@ -141,10 +142,10 @@ height: 27px;
 left: 173px;
 }
 #openprograms li {
-background: #D4D0C8 url(../images/XP/open_button.png) no-repeat 0 0;
+background: #D4D0C8 url(../../images/XP/open_button.png) no-repeat 0 0;
 }
 #openprograms li:hover {
-background: #D4D0C8 url(../images/XP/open_button.png) no-repeat 0 -27px;
+background: #D4D0C8 url(../../images/XP/open_button.png) no-repeat 0 -27px;
 }
 #openprograms li a {
 width: 135px;
@@ -169,7 +170,7 @@ color: #808080;
 letter-spacing: 0;
 }
 #recent {
-background: transparent url(../images/XP/divider.png) no-repeat 50% 0;
+background: transparent url(../../images/XP/divider.png) no-repeat 50% 0;
 }
 #internetbrowser:hover, #notepad:hover, #recent li a:hover, #myplaces li a:hover,
 #myplaces li#myrecent ul li a:hover, #allprograms li a:hover, #startmenu #allprograms li ul li.folder a:hover,
@@ -187,10 +188,10 @@ width: 180px;
 color: #00089b;
 }
 #myplaces ul {
-background: transparent url(../images/XP/dividerblue.png) no-repeat 50% 0;
+background: transparent url(../../images/XP/dividerblue.png) no-repeat 50% 0;
 }
 #my li#myrecent {
-background: transparent url(http://pierrepapierciseaux.net/WIN93/3_OLD/desktop/images/XP/recent_arrows.png) no-repeat 100% -29px;
+background: transparent url(http://pierrepapierciseaux.net/WIN93/3_OLD/desktop/../images/XP/recent_arrows.png) no-repeat 100% -29px;
 }
 #myrecent ul {
 left: 170px;
@@ -205,7 +206,7 @@ background: #fff;
 border: 1px solid #000;
 }
 #winupdate {
-background: transparent url(../images/XP/divider.png) no-repeat 50% 100%;
+background: transparent url(../../images/XP/divider.png) no-repeat 50% 100%;
 }
 
 
@@ -216,7 +217,7 @@ background: transparent url(../images/XP/divider.png) no-repeat 50% 100%;
 #window h3 {
 position: relative;
 height: 23px;
-background: transparent url(../images/XP/window_bar.png) no-repeat 100% 0;
+background: transparent url(../../images/XP/window_bar.png) no-repeat 100% 0;
 }
 
 
@@ -231,7 +232,7 @@ height: 23px;
 ul.window_control li a span {
 width: 18px;
 height: 23px;
-background: transparent url(../images/XP/window_buttons.png) no-repeat 0 0;
+background: transparent url(../../images/XP/window_buttons.png) no-repeat 0 0;
 }
 ul.window_control li.maximise a span {
 background-position: -16px 0;
@@ -255,7 +256,7 @@ background-position: -32px -69px;
 
 #window ul.menubar {
 height: 27px;
-background: url(http://pierrepapierciseaux.net/WIN93/3_OLD/desktop/images/XP/window_menubar.png) repeat-x 100% 0;
+background: url(http://pierrepapierciseaux.net/WIN93/3_OLD/desktop/../images/XP/window_menubar.png) repeat-x 100% 0;
 }
 
 
@@ -271,12 +272,12 @@ border-width: 0 2px 2px 2px;
 }
 #run_dialog h2 {
 height: 22px;
-background: transparent url(../images/XP/window_bar.png) repeat-x 100% 0;
+background: transparent url(../../images/XP/window_bar.png) repeat-x 100% 0;
 }
 #run_dialog h2 span {
 height: 22px;
 display: block;
-background: transparent url(../images/XP/window_corners.png) no-repeat 0 0;
+background: transparent url(../../images/XP/window_corners.png) no-repeat 0 0;
 width: 15px;
 float: left;
 }
@@ -303,7 +304,7 @@ height: 22px;
 ul.window_control li a span {
 width: 100%;
 height: 100%;
-background: transparent url(../images/XP/window_buttons.png) no-repeat 0 0;
+background: transparent url(../../images/XP/window_buttons.png) no-repeat 0 0;
 }
 ul.window_control li.max a span {
 background-position: -19px 0;
@@ -335,7 +336,7 @@ position: absolute;
     padding: 4px 26px 4px 10px;
 }
 #window .middle, div.notes, div.attribution, div.tags {
-    background: url('../images/large_middle.png') repeat-y scroll 0% 0% transparent;
+    background: url('../../images/XP/large_middle.png') repeat-y scroll 0% 0% transparent;
 }
 
 
@@ -345,7 +346,7 @@ position: absolute;
 #window .bottom {
     background-position: -168px -46px;
     height: 22px;
- background-image: url('../images/master_sprite.png');
+ background-image: url('../../images/XP/master_sprite.png');
     margin: auto;
 }
 
@@ -355,7 +356,7 @@ position: absolute;
 #window .top {
     height: 44px;
     background-position: -168px 0px;
-     background-image: url('../images/master_sprite.png');
+     background-image: url('../../images/XP/master_sprite.png');
     margin: auto;
     cursor: move;
     cursor: -moz-grab;
@@ -426,7 +427,7 @@ div#window.recycle_bin {
 
 }
 
-div#window.windows_xp_sound{
+div#window.paint{
     top: 50%;
     left: 50%;
     z-index: 50;
@@ -492,3 +493,4 @@ padding-top: 4px;
 padding-bottom: 4px;
 padding-left: 4px;
 }
+

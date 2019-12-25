@@ -1,58 +1,57 @@
 <!DOCTYPE html>
-
-
-<!-- Mirrored from v0.windows93.net/ by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 21 Dec 2019 13:46:24 GMT -->
+<html>
 <head>
-
 <meta charset="UTF-8">
-<title>Windows Vista</title>
-
-<link rel="cssheet" type="text/css" media="screen" href="css/defaultxp.css" title="User Defined Style">
-<link rel="alternate cssheet" href="css/defaultxp.css" type="text/css" media="screen" title="Default XP Theme">
+<title>WINDOWS 93</title>
+<link rel="stylesheet" type="text/css" media="screen" href="css/defaultxp.css" title="User Defined Style">
+<link rel="stylesheet" href="css/style.css" type="text/css">
 
 <!-- javascript needed for added functionality. Includes working clock and dragable desktop icons -->
 <!-- javascript functionality by Alex Schroeder http://alexanderschroeder.net/ -->
- <script src="../ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
- <script src="../code.jquery.com/ui/1.11.0/jquery-ui.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+<script src="https://code.jquery.com/ui/1.11.0/jquery-ui.js"></script>
 
-<script type="text/javascript" src="../js/clock.js"></script>
-<script type="text/javascript" src="../js/startmenu.js"></script>
-<script type="text/javascript" src="../js/xp-demo-common.js"></script>
-<script type="text/javascript" src="../js/dom-drag.js"></script>
+<script type="text/javascript" src="js/clock.js"></script>
+<script type="text/javascript" src="js/startmenu.js"></script>
+<script type="text/javascript" src="js/xp-demo-common.js"></script>
+<script type="text/javascript" src="js/dom-drag.js"></script>
+<script type="text/javascript" src="js/balloon.js"></script>
 <script type="text/javascript" src="../apps/apps.js"></script>
 
-
-
+<script type="text/javascript"> 
+var totalCount = 2;
+function ChangeIt() 
+{
+var num = Math.ceil( Math.random() * totalCount );
+document.body.background = 'images/background/'+num+'.png';
+document.body.style.backgroundSize = "cover";// Background repeat
+}
 </script>
 
 
+<script>
+function toggleVideo(state) {
+    // if state == 'hide', hide. Else: show video
+    var div = document.getElementById("danceh");
+    var iframe = div.getElementsByTagName("iframe")[0].contentWindow;
+    div.style.display = state == 'hide' ? 'none' : '';
+    func = state == 'hide' ? 'pauseVideo' : 'playVideo';
+    iframe.postMessage('{"event":"command","func":"' + func + '","args":""}', '*');
+}
+</script>
 
 </head>
-
 <body>
-<div id="window" class="paint" draggable="true">
-    <div class="top">
-        <div class="titre">
-            Paint
-            <div id="close"  class="windows_xp_sound"></div>
-        </div>
-    </div>
-    <div class="middle">
-        <div class="caption">
-            <p class="glitch">
-			
-				<iframe src="../apps/paint/paint.html" width="440" height="440"></iframe>
-               
-            </p>
-        </div>
-    </div>
-    <div class="bottom"></div>
-</div>
-
+<script type="text/javascript"> 
+ChangeIt();
+</script> 
+<audio autoplay>
+<source src="xp.mp3" type="audio/mpeg">
+</audio>
 <div id="window" class="my_computer" draggable="true">
 	<div class="top">
 		<div class="titre">
-			<p style="text-align:left">Windows 93</p>
+			Windows XP
 			<div id="close"  class="my_computer"></div>
 		</div>
 		<div class="info">
@@ -62,7 +61,7 @@
 	<div class="middle">
 		<div class="terminal">
 			<p class="glitch">
-<pre>
+			<pre>
 .__           .__  .__
 |  |__   ____ |  | |  |   ____
 |  |  \_/ __ \|  | |  |  /  _ \
@@ -76,78 +75,53 @@ __  _  _____________|  |    __| _/
   \/\_/ \____/|__|  |____/\____ |
                                \/
 </pre>
-
 <br>
-					Welcome to Windows 93 :)<br>
-				 Yet another mini label focused on electronic deviant arts.
-			</p>
-
-		</div>
-	</div>
-	<div class="bottom"></div>
-</div>
-
-<div id="window" class="cmd" draggable="true">
-	<div class="top">
-		<div class="titre">
-			<p style="text-align:left">C:\WINDOWS\system32\cmd.exe</p>
-			<div id="close"  class="cmd"></div>
-		</div>
-		<div class="info">
-			&hearts;  &#9760;  &#9835;
-		</div>
-	</div>
-	<div class="middle">
-		<div class="cmds">
-			<p class="glitch" style="text-align:left">
-Microsoft Windows [Version 6.0.6000]
-<br>
-Copyright (c) 2006 Microsoft Corporation. All rights reserved.
-<br>
-<br>
-C:\Windows\Users\Karen> 
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
+Welcome to Windows XP3 :)<br>
+ Yet another mini label focused on electronic deviant arts.
 </p>
-		</div>
-	</div>
+</div>
+</div>
 	<div class="bottom"></div>
 </div>
+
+
 
 <div id="window" class="my_documents" draggable="true">
 	<div class="top">
 		<div class="titre">
-			<p style="text-align:left">RELEASES</p>
+			Credit
 			<div id="close"  class="my_documents"></div>
 		</div>
 		<div class="info">
-			Music & Stuff
+			Windows 93 v0 by Jankenpopp
 		</div>
 	</div>
 	<div class="middle">
 		<div class="caption">
 			<p class="glitch">
-
-<a>Lorem</a> ipsum dolor sit amet, consecteteur adipiscing elit pede. Dui ut consectetuer.
-Lorem ipsum dolor sit amet, consecteteur adipiscing elit pede. Dui ut consectetuer.
-Lorem ipsum dolor sit amet, consecteteur adipiscing elit pede. Dui ut consectetuer.
-Lorem ipsum dolor sit amet, consecteteur adipiscing elit pede. Dui ut consectetuer.
-Lorem ipsum dolor sit amet, consecteteur adipiscing elit pede. Dui ut consectetuer.
-Lorem ipsum dolor sit amet, consecteteur adipiscing elit pede. Dui ut consectetuer.
-Lorem ipsum dolor sit amet, consecteteur adipiscing elit pede. Dui ut consectetuer.
-Lorem ipsum dolor sit amet, consecteteur adipiscing elit pede. Dui ut consectetuer.
-Lorem ipsum dolor sit amet, consecteteur adipiscing elit pede. Dui ut consectetuer.
-Lorem ipsum dolor sit amet, consecteteur adipiscing elit pede. Dui ut consectetuer.
-Lorem ipsum dolor sit amet, consecteteur adipiscing elit pede. Dui ut consectetuer.
-Lorem ipsum dolor sit amet, consecteteur adipiscing elit pede. Dui ut consectetuer.
-			</p>
-
+			<u><b>Links related to Jankenpopp</u></b><br>
+			<a href="http://jankenpopp.com/">Jankenpopp's website</a><br>
+			<a href="http://windows93.net/">Windows93</a><br>
+			<a href="http://gay.fish/">gay.fish</a><br>
+			<a href="https://jankenpopp.bandcamp.com/">Jankenpopp's bandcamp</a><br>
+			<a href="https://soundcloud.com/jankenpopp">Jankenpopp's soundcloud</a><br>
+			<a href="https://www.facebook.com/JANKENPOPP-237116195706/">Jankenpopp's facebook</a><br>
+			<a href="https://twitter.com/jankenpopp">Jankenpopp's twitter</a><br>
+			<a href="https://framasphere.org/people/4329d33027d2013283742a0000053625">Jankenpopp's framasphere</a><br><br>
+			<u><b>Music, albums &amp; more</u></b><br>
+			<a href="https://youtube.com/watch?v=XKia6mT7CKI" target="_blank">TOXIQUE (2010)</a><br>
+			<a href="https://youtube.com/watch?v=TNsKrysIzXw" target="_blank">REVE & AMOUR (2012)</a><br>
+			<a href="https://youtube.com/watch?v=J9V2OAy7KW0" target="_blank">PAPI (MENEO RMX) (2012)</a><br>
+			<a href="https://youtube.com/watch?v=lAN8CiXCI_8" target="_blank">TUCH MY HAIR (2012)</a><br>
+			<a href="https://youtube.com/watch?v=M1fxn1RwvDU" target="_blank">JE VEUX POULPE (2012)</a><br>
+			<a href="https://youtube.com/watch?v=M1fxn1RwvDU" target="_blank">GOOGLE BRAIN DEAD (2013)</a><br>
+			<a href="https://youtube.com/watch?v=8iwD5R4i-oc" target="_blank">TROPICAL GUIMAUVE (2014)</a><br>
+			<a href="https://youtube.com/watch?v=C7fKoamz0nY" target="_blank">MASHED POTATOES (2015)</a><br>
+			<a href="https://youtube.com/watch?v=x9xDXU2WJeY" target="_blank">WINDOWS93 LIVE SHOWREEL (2016)</a><br>
+			<a href="http://windows93.net/pls" target="_blank">L'AUTER EN PLS (2018)</a><br>
+			<a href="https://youtube.com/watch?v=lNEXAwwnSVs" target="_blank">SUPER PLAYER (2018)</a><br><br>
+			<b><a href="https://youtube.com/user/jankenpopp/videos" target="_blank">The entirety of Jankenpopp's videos</a></b><br><br>
+			<b><a href="https://github.com/1j01/jspaint" target="_blank">JS.Paint by 1j01</a></b>
 		</div>
 	</div>
 	<div class="bottom"></div>
@@ -158,11 +132,8 @@ Lorem ipsum dolor sit amet, consecteteur adipiscing elit pede. Dui ut consectetu
 <div id="window" class="recycle_bin" draggable="true">
 	<div class="top">
 		<div class="titre">
-			<p style="text-align:left">Corbeille</p>
+			Recycle Bin
 			<div id="close"  class="recycle_bin"></div>
-		</div>
-		<div class="info">
-			Des trucs dans la corbeille
 		</div>
 	</div>
 	<div class="middle">
@@ -170,31 +141,94 @@ Lorem ipsum dolor sit amet, consecteteur adipiscing elit pede. Dui ut consectetu
 			<p class="glitch">
 				<img src="images/trash.jpg" alt="">
 			</p>
-
 		</div>
 	</div>
 	<div class="bottom"></div>
 </div>
 
+<div id="window" class="paint" draggable="true">
+    <div class="top">
+        <div class="titre">
+            Paint
+            <div id="close"  class="paint"></div>
+        </div>
+    </div>
+    <div class="middle">
+        <div class="caption">
+            <p class="glitch">
+			
+				<iframe src="../apps/Paint/paint.html" width="440" height="440"></iframe>
+               
+            </p>
+        </div>
+    </div>
+    <div class="bottom"></div>
+</div>
+
+<div id="window" class="notepad draggable="true">
+    <div class="top">
+        <div class="titre">
+            No title - Notepad
+            <div id="close"  class="notepad"></div>
+        </div>
+    </div>
+    <div class="middle">
+        <div class="caption">
+            <p class="glitch">
+             <textarea xmlns="http://www.w3.org/1999/xhtml" id="linewidth-guide" style="width: 441px; height: 451px;"></textarea>
+            </p>
+        </div>
+    </div>
+    <div class="bottom"></div>
+</div>
+
+<div id="window" class="danceh" draggable="true">
+    <div class="top">
+        <div class="titre">
+            HAMPSTER DANCE
+            <div id="close"  class="danceh"></div>
+        </div>
+    </div>
+    <div class="middle">
+        <div class="caption">
+            <p class="glitch">
+                <iframe class="ui_window__iframe" allowfullscreen="true" src="apps/hamster/hamster.html" width="445" height="416"></iframe>
+            </p>
+        </div>
+    </div>
+    <div class="bottom"></div>
+</div>
 
 <div id="window" class="my_network_places" draggable="true">
 	<div class="top">
 		<div class="titre">
-			<p style="text-align:left">LINKS</p>
+			Links
 			<div id="close"  class="my_network_places"></div>
 		</div>
 		<div class="info">
-			People & Things we like
+			Windows93 related links & more...
 		</div>
 	</div>
 	<div class="middle">
 		<div class="caption">
 			<p class="glitch">
-				<a >Some Link</a> | Description<br>
-				<a >Some Link</a> | Description<br>
-				<a >Some Link</a> | Description<br>
-				<a >Some Link</a> | Description<br>
-				<a >Some Link</a> | Description<br>
+				<u><b>Previous versions of Windows 93:</b></u><br>
+				<a href="http://v0.windows93.net" target="_blank">Windows93 v0 (this was based off this version)</a><br>
+				<a href="http://v1.windows93.net" target="_blank">Windows93 v1 (first working version)</a><br>
+				<a href="http://v2.windows93.net" target="_blank">Windows93 v2 (current)</a><br><br>
+				<!--<a href="http://windows93.net/" target="_blank">Windows93</a>
+				<a href="http://v2.windows93.net" target="_blank">Windows93 v2</a>
+				<a href="http://v2.windows93.net" target="_blank">Windows93 v2</a>-->
+				<u><b>Other Stuff</u></b><br>
+				<a href="http://windows93.net/b/" target="_blank">Bindowzuchan</a><br>
+				<a href="http://windows93.net/backdoor.html" target="_blank">Backdoor (useless)</a><br>
+				<a href="http://windows93.net/trollbox" target="_blank">Trollbox (web)</a><br>
+				<a href="http://windows93.net/peng" target="_blank">Peng (shut down due to instability)</a><br>
+				<a href="http://v2.windows93.net/42" target="_blank">Windows93 v2 /42/ (Where the Sys42 shard used to be)</a><br>
+				<a href="http://windows93.net/wiki" target="_blank">Windows93 Wiki</a><br>
+				
+				
+				
 			</p>
 
 		</div>
@@ -202,66 +236,15 @@ Lorem ipsum dolor sit amet, consecteteur adipiscing elit pede. Dui ut consectetu
 	<div class="bottom"></div>
 </div>
 
-
-
-<!-- UN CHAT QUI MARCHE MAL
-<div id="window" class="chat" draggable="false">
-	<div class="top">
-		<div class="titre">
-			CHAT
-			<div id="close"  class="chat"></div>
-		</div>
-
-
-		<div class="info">
-							<form name="form1" method="post" action="envoie.php">
-			          <input name="pseudo" type="text" value="78.218.33.48" style="display:none;">
-          <input name="message" type="text" value="" autocomplete="off" onKeypress="
-     if (event.keyCode==60 || event.keyCode==62) event.returnValue = false;
-     if (event.which==60 || event.which==62) return false;"  outline:none; onselectstart="return false" onpaste="return false;" onCopy="return false" onCut="return false" onDrag="return false" onDrop="return false" autofocus>
-
-          <input type="submit" name="Submit" value="Envoyer" style="display:none;">
-
-      </form>
-		</div>
-	</div>
-	<div class="middle">
-		<div class="caption">
-
-	<div style="width:480px; overflow:hidden; margin-top: -38px;">
-		<pre>
-			<br />
-<b>Warning</b>:  include(data.txt): failed to open stream: No such file or directory in <b>/home/pierrepaw/www/WIN93/3_OLD/desktop/index.php</b> on line <b>223</b><br />
-<br />
-<b>Warning</b>:  include(): Failed opening 'data.txt' for inclusion (include_path='.:/usr/local/php5.4/lib/php') in <b>/home/pierrepaw/www/WIN93/3_OLD/desktop/index.php</b> on line <b>223</b><br />
-		</pre>
-	</div>
-
-		</div>
-	</div>
-	<div class="bottom"></div>
-</div>
--->
-
-
-
-
-
-
-
 <ul id="main_icons">
-<li id="my_computer"><a title="Shows the disk drives and hardware connected to this computer."><img src="images/Computer-icon.png" class="icon"><span></span>Computer</a></li>
-<li id="cmd"><a title="Ouvre une invite de Commande"><img src="images/cmd.png" class="icon"><span></span><br>Invite de Commande</a></li>
-<li id="my_documents"><a title="Contains letters, reports, and other documents and files."><span></span>RELEASES</a></li>
-<li id="recycle_bin"><a title="Contains the files and folders you have deleted."><img src="images/trash-icon.png" class="icon"><span></span><br>Recycle Bin</a></li>
-<li id="my_network_places"><a title="Shows shortcuts to Web sites, network computers, and FTP sites."><span></span>LINKS</a></li>
-<li id="paint"><a title="Ouvre Paint"><img src="images/Computer-icon.png" class="icon"><span></span><br>Paint</a></li>
+<li id="my_computer"><a title="Shows the disk drives and hardware connected to this computer."><img src="../images/XP/Computer-icon.png" class="icon"><span></span><br>Computer</a></li>
+<li id="recycle_bin"><a><img src="../images/XP/trash-icon.png" class="icon"><span></span><br>Recycle Bin</a></li>
+<li id="notepad"><a><img src="../images/XP/notepad.png" class="icon"><span></span><br>Notepad</a></li>
+<li id="paint"><a><img src="../images/XP/mspaint.png" class="icon"><span></span><br>Paint</a></li>
+<li id="my_network_places"><a><span></span>Links</a></li>
+<li id="my_documents"><a><span></span>Releases</a></li>
+<li id="danceh" style="left: 109px; top: -439px;"><a><span></span>Hampster dance don't open it !</a></li>
 </ul>
-
-
-
-
-
 <div id="display_properties">
 <h2 id="display_properties_handle"><span></span>Display Properties</h2>
 <ul class="window_control">
@@ -283,7 +266,7 @@ Lorem ipsum dolor sit amet, consecteteur adipiscing elit pede. Dui ut consectetu
 
 <div id="startmenu">
 
-<h3><img src="images/default_icon.jpg" alt="Trovster's logo" width="48px" height="48px">Windows93</h3>
+<h3><img src="images/default_icon.jpg" alt="Trovster's logo" width="48px" height="48px">Windows XP</h3>
 <div id="recentprograms">
 
 <dl id="internetbrowser">
@@ -297,11 +280,11 @@ Lorem ipsum dolor sit amet, consecteteur adipiscing elit pede. Dui ut consectetu
 </dl>
 
 <ul id="recent">
-<li id="mediaplayer"><a title="">Windows Media Player</a></li>
-<li><a title="Change to the default XP style">XP Default Style</a></li>
+<li id="mediaplayer"><a>Windows Media Player</a></li>
+<li id="notepad"><a>Notepad</a></li>
 <li><a title="Change to the classic windows style, from Windows 95, 98 and 2000">Classic Style</a></li>
 <li><a title="Change to the Longhorn style for XP">Longhorn XP Style</a></li>
-<li><a title="Change to the &quot;Sustenance&quot; style.">Sustenance Style</a></li>
+<li><a title=" ">Nothing</a></li>
 <li><a title="Coming Soon: Mac OSX style">OSX Style</a></li>
 </ul>
 
@@ -312,12 +295,12 @@ Lorem ipsum dolor sit amet, consecteteur adipiscing elit pede. Dui ut consectetu
 
 <ul id="my">
 <li id="myrecent"><a id="myrecent_link">My Recent Documents</a>
-<ul id="myrecent_menu">
+<!--<ul id="myrecent_menu">
 <li class="textdoc"><a title="Location: C:\windows">document.txt</a></li>
 <li class="mywebsite"><a title="Location: http://interweb.net/">interweb.net/</a></li>
 <li class="textdoc"><a title="Location: C:\Documents and Settings\All Users">untitled.txt</a></li>
 <li class="mywebsite"><a title="Location: http://www.interweb.com">www.interweb.com</a></li>
-</ul>
+</ul>-->
 </li>
 
 <li id="mymusic"><a title="Opens the My Music folder, where you can store music and other audio files.">My Music</a></li>
@@ -340,7 +323,7 @@ Lorem ipsum dolor sit amet, consecteteur adipiscing elit pede. Dui ut consectetu
 </div>
 
 <ul id="allprograms">
-<li><a title="" id="allprograms_link">All Programs</a>
+<li><a  id="allprograms_link">All Programs</a>
 	<ul id="allprograms_menu">
 	<li id="winupdate"><a title="">Windows Update</a></li>
 	<li class="folder"><a title="">Accessories</a></li>
@@ -355,10 +338,10 @@ Lorem ipsum dolor sit amet, consecteteur adipiscing elit pede. Dui ut consectetu
 	</ul>
 </li>
 </ul>
-
 <ul id="close">
 <li id="logoff"><a title="Provides options for closing programs and loggin off, or for leaving your programs running and switching to another user."><em>L</em>og Off</a></li>
-<li id="shutdown"><a title="Provides options for turning off or restarting your computer, or for activating Stand By or Hibernate modes.">Sh<em>u</em>t Down</a></li>
+<li color= white;  onclick="document.location.reload(false)";
+	id="shutdown"> <a><span style:{color: blue;} ></span>Turn Off Computer</a></li></li>
 </ul>
 
 <!-- end of div id #startmenu -->
@@ -372,6 +355,8 @@ Lorem ipsum dolor sit amet, consecteteur adipiscing elit pede. Dui ut consectetu
 <li class="min"><a title=""><span></span>Minimise</a></li>
 <li class="max"><a title=""><span></span>Maximise</a></li>
 <li class="close" id="run_box_close"><a title=""><span></span>Close</a></li>
+</ul>
+
 </ul>
 
 <div>
@@ -397,9 +382,9 @@ Lorem ipsum dolor sit amet, consecteteur adipiscing elit pede. Dui ut consectetu
 
 <ul id="quicklaunch">
 <li id="quick_desktop"><a title="R00T"><span></span></a></li>
-<li id="quick_contact"><a title="Contact"><span></span></a></li>
-<li id="quick_facebook"><a title="Faceboobs"><span></span></a></li>
-<li id="quick_soundcloud"><a title="Listen on Soundcloud"><span></span></a></li>
+<li id="quick_contact"><a href="mailto:contact@windows93.net" title="Contact"><span></span></a></li></a>
+<li id="quick_facebook"><a href="https://www.facebook.com/JANKENPOPP-237116195706/" title="Facebook" target="_blank"><span></span></a></li>
+<li id="quick_soundcloud"><a href="https://soundcloud.com/jankenpopp" title="Soundcloud" target="_blank"><span></span></a></li>
 
 </ul>
 
@@ -408,18 +393,54 @@ Lorem ipsum dolor sit amet, consecteteur adipiscing elit pede. Dui ut consectetu
 
 <ul id="systemtray">
 <li id="winamp"><a  title="Winamp 5.08"><span></span>Winamp</a></li>
-<li id="msn"><a  title="MSN Messenger (BETA) - Signed In"><span></span>MSN</a></li>
-<li id="lan"><a  title="Local Area Connection"><span></span>LAN</a></li>
+
+<li id="defender"><a  title="Winamp 5.08"><span></span>Winamp</a>
+</li>
+<li id="msn"><a  title="MSN Messenger (BETA) - Signed In"><span></span>MSN</a><div id="balloon" style="display:none">
+	<div style="position: relative; width: 0px; height: 0px;">
+		<div class="sc-htpNat gBRyzn"><div class="balloon__container">
+			<button class="balloon__close" id="balloon_close"></button>
+			<div class="balloon__header">
+				<img class="balloon__header__img" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAALnSURBVDhPjY8LLNVxFMeP3ZvrTjWReYV7FUrZPEZCWaRVXhW3mjTmWV2PipK8RzZKKI0bLbpNniMmy+OixzwqZmkRm8dadWVJ6WXWt7/5b6VZ9dnOdnbO+Zzz+9HSWG4WR1x5HBqfDe8jqT1MwXih/g8uZVW6aeseSjgZVY7q2id42v0aKanNcD+c911puenR+T47uhiuks0mjXXeGfNiTcwtjIpikX6+DvXZlRhQNUN52h2EJ3XBxDqtja+yO5BojS6rLuAblDPZl92AD1kSIDIEn0/EoyZWCtm5bMzQMgyROpqcxahIL0FaTi8MTET3hRs8rFmd6HRcyaeBwGR8PR6N7wFRmHX0w0dLEeSq5nhL2nihoI4O4qKdr4aCvEZY2EcM6Qi3O7I6UUCEVD544AzmDF0wt94d/bJW9AnM8EFBC/Vu7pgoLEQLrULDSm1kZlTAyNz/ucDYNZjViXbuL3z4TBQOkAFmOYZ41dmJsf5+1Hn7YHxiAu9kMtyl5agVmCMhpRSaApcOA5N9vqxOpGFwrLjPKxRyWo1xrh4GOIqYGB3FPN+YRb0KPFQzX6gwtUdEYhmIKyxau9FrD6sTOTiK0zpOZ2KQlNDH0UKZ6CDeT09jprsbky8H0RQWhioi3AlJxsHgfNjYOhcyC2xZnShIfNXTT1wx1WXjinZSxcjICOQSCVp11mAsKQlvmpshXaUNaXE7bJ0ivzg67ctiFghZfQE1Ha/c+VdUM5eqmCVlTEhJBQW0AheYmiwmAxl5LeDydKr27g/wYbXf4QpPxTX+qPHwhoQRJKSMy8RHCpPftLJDe+cQXD0ToadvHOLrH2XJSovhKVvGNbTJIQ2MRjwjnmXi2hY7DL8cwcVcGYj4RVu3uS91/Rf6Rm71j3qmcS89F+Un4vDq7RTyb3SBxxf0WlnvOMaO/RWeuoZVad51GRrbhuHjlwwFjuYDcwuHU2z/f1EScRQ1bzNJ1BbbXQELtT8h+gm9undzpD1ygQAAAABJRU5ErkJggg==" alt="risk">
+				<span class="balloon__header__text">Your computer might be at risk</span>
+			</div>
+			<p class="balloon__text__first">Antivirus software might not be installed</p>
+			<p class="balloon__text__second">Click this balloon to fix this problem.</p>
+			</div>
+		</div></li>
+<li id="lan"><a  title="Local Area Connection"><span></span>LAN</a>
+	</div>
+	<div>
+</li>
 </ul>
+
 
 
 <p id="clock">00:00</p>
 
 </div>
 
+
 </div>
 
 <script type="text/javascript">
+Drag.init(document.getElementById("my_computer"));
+Drag.init(document.getElementById("my_documents"));
+Drag.init(document.getElementById("recycle_bin"));
+Drag.init(document.getElementById("my_network_places"));
+Drag.init(document.getElementById("paint"));
+Drag.init(document.getElementById("notepad"));
+Drag.init(document.getElementById("danceh"));
+
+var theRunHandle = document.getElementById("run_dialog_handle");
+var theRunRoot   = document.getElementById("run_dialog");
+Drag.init(theRunHandle, theRunRoot);
+
+var theDisplayHandle = document.getElementById("display_properties_handle");
+var theDisplayRoot   = document.getElementById("display_properties");
+Drag.init(theDisplayHandle, theDisplayRoot);
+
+
 
 $( "#my_computer" ).dblclick(function() {
 $( "#window.my_computer" ).toggle( "fast", function() {
@@ -427,15 +448,6 @@ $( "#window.my_computer" ).toggle( "fast", function() {
 });
 $( "#close.my_computer" ).click(function() {
 $( "#window.my_computer" ).toggle( "fast", function() {
-});
-});
-
-$( "#cmd" ).dblclick(function() {
-$( "#window.cmd" ).toggle( "fast", function() {
-});
-});
-$( "#close.cmd" ).click(function() {
-$( "#window.cmd" ).toggle( "fast", function() {
 });
 });
 
@@ -465,7 +477,6 @@ $( "#close.my_network_places" ).click(function() {
 $( "#window.my_network_places" ).toggle( "fast", function() {
 });
 });
-
 $( "#paint" ).dblclick(function() {
 $( "#window.paint" ).toggle( "fast", function() {
 });
@@ -474,23 +485,27 @@ $( "#close.paint" ).click(function() {
 $( "#window.paint" ).toggle( "fast", function() {
 });
 });
+$( "#notepad" ).dblclick(function() {
+$( "#window.notepad" ).toggle( "fast", function() {
+});
+});
+$( "#close.notepad" ).click(function() {
+$( "#window.notepad" ).toggle( "fast", function() {
+});
+});
+$( "#danceh" ).dblclick(function() {
+$( "#window.danceh" ).toggle( "fast", function() {
+});
+});
+$( "#close.danceh" ).click(function() {
+$( "#window.danceh" ).toggle( "fast", function() {
+});
+});
+(modifié)
+
 </script>
 
-
-
-
-
-
-
-
-
-
-
-
+</script>
 
 </body>
-
-<!-- Mirrored from v0.windows93.net/ by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 21 Dec 2019 13:46:27 GMT -->
 </html>
-
-<!-- Localized -->
