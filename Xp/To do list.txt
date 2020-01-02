@@ -1,5 +1,3 @@
-App:I see a little silhouetto of a man
-
-Ouvre: Gif I see a little silhouetto of a man
-
-Audio: I see a little silhouetto of a man
+Prendre le style du middle de WinXp.now.sh (juste le trait bleu) pour les fenêtres
+- tenter de faire internet explorer ou l'explorer de fichier
+- mettre les icons a coté du nom des apps dans les fenêtres

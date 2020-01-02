@@ -333,7 +333,7 @@ position: absolute;
 
 #window .middle, div.notes, div.attribution, div.tags {
     background-repeat: repeat-y;
-    padding: 4px 26px 4px 10px;
+    padding: 0px 0px 0px 6px;
 }
 #window .middle, div.notes, div.attribution, div.tags {
     background: url('../../images/XP/large_middle.png') repeat-y scroll 0% 0% transparent;
@@ -344,17 +344,17 @@ position: absolute;
     height: 22px;
 }
 #window .bottom {
-    background-position: -168px -46px;
-    height: 22px;
+    background-position: -168px -65px;
+    height: 2px;
  background-image: url('../../images/XP/master_sprite.png');
     margin: auto;
 }
 
 #window .top {
-    height: 44px;
+    height: 28px;
 }
 #window .top {
-    height: 44px;
+    height: 28px;
     background-position: -168px 0px;
      background-image: url('../../images/XP/master_sprite.png');
     margin: auto;
@@ -485,12 +485,23 @@ overflow: hidden;
 .terminal {
 background-color: #000;
 color: #00FF00;
-margin-top: -4px;
+margin-top: 0px;
 margin-left: -4px;
-width: 452px;
+width: 471px;
 margin-bottom: -4px;
 padding-top: 4px;
 padding-bottom: 4px;
 padding-left: 4px;
 }
 
+.caption  {
+	margin-left:-4px
+}
+
+.glitch {
+	width: 472px
+}
+
+.Toolbar {
+	    width: 476px;
+}

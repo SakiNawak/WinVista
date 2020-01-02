@@ -157,7 +157,7 @@ padding-left: 22px;
 #systemtray, #quicklaunch, #openprograms {
 position: absolute;
 top: 0;
-z-index: 50;
+z-index: 20;
 }
 #systemtray li, #quicklaunch li, #openprograms li {
 float: left;
